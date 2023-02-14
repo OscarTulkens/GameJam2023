@@ -15,9 +15,15 @@ C:/Users/Y.Kooke/Desktop/StickyTable/GameJam/GameJam2023/GameJam2023_U
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 55849
 Successfully changed project path to: C:/Users/Y.Kooke/Desktop/StickyTable/GameJam/GameJam2023/GameJam2023_U
 C:/Users/Y.Kooke/Desktop/StickyTable/GameJam/GameJam2023/GameJam2023_U
+=======
+55953
+Successfully changed project path to: C:/unity/GameJam2023/GameJam2023_U
+C:/unity/GameJam2023/GameJam2023_U
+>>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,7 +53,11 @@ C:/Users/Y.Kooke/Desktop/StickyTable/GameJam/GameJam2023/GameJam2023_U
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 132.62 ms, found 3 plugins.
+=======
+Refreshing native plugins compatible for Editor in 120.57 ms, found 3 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -60,6 +70,7 @@ Direct3D:
     VRAM:     8031 MB
     Driver:   30.0.15.1165
 Initialize mono
+<<<<<<< Updated upstream
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
@@ -76,11 +87,32 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (779ms)
 		BeginReloadAssembly (76ms)
+=======
+Mono path[0] = 'C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011247 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 117.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.706 seconds
+Domain Reload Profiling:
+	ReloadAssembly (706ms)
+		BeginReloadAssembly (86ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 		EndReloadAssembly (588ms)
 			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -95,17 +127,38 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (2ms)
 				ProcessInitializeOnLoadAttributes (145ms)
 				ProcessInitializeOnLoadMethodAttributes (48ms)
+=======
+		EndReloadAssembly (493ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (109ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (302ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (118ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.008093 seconds.
+=======
+Registered in 0.011939 seconds.
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Y.Kooke\Desktop\StickyTable\GameJam\GameJam2023\GameJam2023_U\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Y.Kooke\Desktop\StickyTable\GameJam\GameJam2023\GameJam2023_U\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 158.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -146,6 +199,49 @@ Unloading 5709 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 35 unused Assets / (0.7 MB). Loaded Objects now: 6164.
 Memory consumption went from 225.9 MB to 225.2 MB.
 Total: 4.553400 ms (FindLiveObjects: 0.532500 ms CreateObjectMapping: 0.528200 ms MarkObjects: 3.128700 ms  DeleteObjects: 0.362200 ms)
+=======
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 118.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.413 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1414ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1191ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (309ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (659ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (118ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (299ms)
+				ProcessInitializeOnLoadMethodAttributes (82ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5707 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (0.7 MB). Loaded Objects now: 6163.
+Memory consumption went from 225.8 MB to 225.1 MB.
+Total: 4.036900 ms (FindLiveObjects: 0.661600 ms CreateObjectMapping: 0.199100 ms MarkObjects: 2.882200 ms  DeleteObjects: 0.291800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,6 +255,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 504470.869613 seconds.
   path: Assets/Art/2D_PotionGlass_03_NotSolid.png
   artifactKey: Guid(ad392ea2a70c5424499df3898d2297ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -241,3 +338,9 @@ Editor requested this worker to shutdown with reason: Scaling down because of id
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
+=======
+  Time since last request: 436973.370417 seconds.
+  path: Assets/Scripts/game/States/GamePlayState.cs
+  artifactKey: Guid(c0d38b909ecfe8e41b568d813c3ac2e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/game/States/GamePlayState.cs using Guid(c0d38b909ecfe8e41b568d813c3ac2e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7b475e8c6abbd7ffa9660064d32475') in 0.039183 seconds 
+>>>>>>> Stashed changes
