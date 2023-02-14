@@ -1,23 +1,30 @@
+Unity Editor version:    2021.3.5f1 (40eb3a945986)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.5 (Build 21G72)
+Darwin version:          21.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        65536 MB
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.5f1 (40eb3a945986) revision 4254522'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 15731 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+Pro License: YES
 
 COMMAND LINE ARGUMENTS:
-C:\Users\vanha\Documents\unity\2021.3.5f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/2021.3.5f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/unity/GameJam2023/GameJam2023_U
+/Users/oscartulkens/Documents/Godspear Games/GameJam2023/GameJam2023_U
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52713
-Successfully changed project path to: C:/unity/GameJam2023/GameJam2023_U
-C:/unity/GameJam2023/GameJam2023_U
+49755
+Successfully changed project path to: /Users/oscartulkens/Documents/Godspear Games/GameJam2023/GameJam2023_U
+/Users/oscartulkens/Documents/Godspear Games/GameJam2023/GameJam2023_U
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,136 +54,173 @@ C:/unity/GameJam2023/GameJam2023_U
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 197.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 106.32 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
-[Subsystems] Discovering subsystems at path C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/unity/GameJam2023/GameJam2023_U/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.5f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/oscartulkens/Documents/Godspear Games/GameJam2023/GameJam2023_U/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
-    Vendor:   NVIDIA
-    VRAM:     5968 MB
-    Driver:   31.0.15.2698
+ preferred device: Apple M1 Max (high power)
+Metal devices available: 1
+0: Apple M1 Max (high power)
+Using device Apple M1 Max (high power)
+Initializing Metal device caps: Apple M1 Max
 Initialize mono
-Mono path[0] = 'C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.5f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.5f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.5f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56075
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Users/vanha/Documents/unity/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.017170 seconds.
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.5f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.5f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.5f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.5f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.5f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.000606 seconds.
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 198.97 ms, found 3 plugins.
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 108.97 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.155 seconds
+- Completed reload, in  0.442 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1156ms)
-		BeginReloadAssembly (131ms)
+	ReloadAssembly (442ms)
+		BeginReloadAssembly (28ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (828ms)
-			LoadAssemblies (128ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (347ms)
+			LoadAssemblies (28ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (157ms)
+			SetupTypeCache (70ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (544ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (232ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (47ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (199ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (252ms)
-				ProcessInitializeOnLoadMethodAttributes (74ms)
+				RefreshPlugins (109ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (48ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018636 seconds.
+Registered in 0.002021 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/oscartulkens/Documents/Godspear Games/GameJam2023/GameJam2023_U/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oscartulkens/Documents/Godspear Games/GameJam2023/GameJam2023_U/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 216.88 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 111.18 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.381 seconds
+- Completed reload, in  1.029 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2382ms)
-		BeginReloadAssembly (245ms)
+	ReloadAssembly (1030ms)
+		BeginReloadAssembly (171ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1942ms)
-			LoadAssemblies (216ms)
+			CreateAndSetChildDomain (127ms)
+		EndReloadAssembly (796ms)
+			LoadAssemblies (36ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (539ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (96ms)
-			SetupLoadedEditorAssemblies (1052ms)
+			SetupTypeCache (227ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (451ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (217ms)
-				BeforeProcessingInitializeOnLoad (211ms)
-				ProcessInitializeOnLoadAttributes (472ms)
-				ProcessInitializeOnLoadMethodAttributes (111ms)
-				AfterProcessingInitializeOnLoad (14ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.5f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5697 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (0.7 MB). Loaded Objects now: 6152.
-Memory consumption went from 225.5 MB to 224.8 MB.
-Total: 4.242300 ms (FindLiveObjects: 0.540300 ms CreateObjectMapping: 0.180700 ms MarkObjects: 3.173900 ms  DeleteObjects: 0.345900 ms)
+Unloading 5836 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 98 unused Assets / (0.8 MB). Loaded Objects now: 6231.
+Memory consumption went from 375.1 MB to 374.3 MB.
+Total: 2.766375 ms (FindLiveObjects: 0.161792 ms CreateObjectMapping: 0.067000 ms MarkObjects: 2.317875 ms  DeleteObjects: 0.219083 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 326383.255903 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(0d237744946654bf5baa7767fcb18bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(0d237744946654bf5baa7767fcb18bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab87b5b61a6bcc4c3ac0d82ad5b63a6') in 0.017269 seconds 
+  Time since last request: 9482.786754 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite
+  artifactKey: Guid(fbe980cf9b040404da33e516deccf5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite using Guid(fbe980cf9b040404da33e516deccf5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13398d2f61700a37b61bea58392aaf97') in 0.006540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component
+  artifactKey: Guid(8fbe6d34d6294422dad6419f6d7ea57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component using Guid(8fbe6d34d6294422dad6419f6d7ea57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8baa1a444f8b28e471f74434b612e0') in 0.000467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game
+  artifactKey: Guid(6f97094fdc2b8480493284f241ac030b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game using Guid(6f97094fdc2b8480493284f241ac030b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93322f2dc3306ac769a068179c3af0e3') in 0.000453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData
+  artifactKey: Guid(739fc32eaa44d4369b84cd42e423839b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData using Guid(739fc32eaa44d4369b84cd42e423839b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3375103003751adb829a25075927d4') in 0.000460 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.017141 seconds.
+Registered in 0.002468 seconds.
 Begin MonoManager ReloadAssembly
+Thread 0x29fdc7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oscartulkens/Documents/Godspear Games/GameJam2023/GameJam2023_U/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oscartulkens/Documents/Godspear Games/GameJam2023/GameJam2023_U/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Render pipeline_Renderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
 UnityEngine.Debug:LogError (object,UnityEngine.Object)
@@ -187,191 +231,285 @@ UnityEngine.Rendering.Universal.UniversalRendererData:OnValidate () (at Library/
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs Line: 181)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.494 seconds
+- Completed reload, in  0.731 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1495ms)
-		BeginReloadAssembly (184ms)
+	ReloadAssembly (731ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1184ms)
-			LoadAssemblies (145ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (578ms)
+			LoadAssemblies (35ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (339ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (548ms)
+			SetupTypeCache (207ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (267ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (270ms)
-				ProcessInitializeOnLoadMethodAttributes (97ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (52ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5522 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (0.7 MB). Loaded Objects now: 6152.
-Memory consumption went from 212.5 MB to 211.8 MB.
-Total: 4.482800 ms (FindLiveObjects: 0.589800 ms CreateObjectMapping: 0.377000 ms MarkObjects: 3.086500 ms  DeleteObjects: 0.428100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 45.962400 seconds.
-  path: Assets/Scripts/ObjectPoolSystem
-  artifactKey: Guid(1433cba33e03a74488f3057f2c59dfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ObjectPoolSystem using Guid(1433cba33e03a74488f3057f2c59dfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e5cea600d302650c8dcadeb9c234f2') in 0.015935 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018568 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Render pipeline_Renderer is missing RendererFeatures
-This could be due to missing scripts or compile error.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:LogError (object,UnityEngine.Object)
-UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs:181)
-UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs:76)
-UnityEngine.Rendering.Universal.UniversalRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/UniversalRendererData.cs:242)
-
-(Filename: Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs Line: 181)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.532 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1533ms)
-		BeginReloadAssembly (182ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1213ms)
-			LoadAssemblies (135ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (348ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (578ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (118ms)
-				ProcessInitializeOnLoadAttributes (332ms)
-				ProcessInitializeOnLoadMethodAttributes (92ms)
-				AfterProcessingInitializeOnLoad (17ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (60ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5527 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (0.7 MB). Loaded Objects now: 6160.
-Memory consumption went from 212.6 MB to 211.9 MB.
-Total: 4.276300 ms (FindLiveObjects: 0.431700 ms CreateObjectMapping: 0.260900 ms MarkObjects: 3.241500 ms  DeleteObjects: 0.340900 ms)
+Unloading 5660 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 99 unused Assets / (0.8 MB). Loaded Objects now: 6227.
+Memory consumption went from 362.6 MB to 361.8 MB.
+Total: 2.753083 ms (FindLiveObjects: 0.168333 ms CreateObjectMapping: 0.087250 ms MarkObjects: 2.261959 ms  DeleteObjects: 0.234708 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.017119 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Render pipeline_Renderer is missing RendererFeatures
-This could be due to missing scripts or compile error.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:LogError (object,UnityEngine.Object)
-UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs:181)
-UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs:76)
-UnityEngine.Rendering.Universal.UniversalRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/UniversalRendererData.cs:242)
-
-(Filename: Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs Line: 181)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.503 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1504ms)
-		BeginReloadAssembly (177ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (1192ms)
-			LoadAssemblies (134ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (393ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (541ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (294ms)
-				ProcessInitializeOnLoadMethodAttributes (99ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5527 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (0.7 MB). Loaded Objects now: 6163.
-Memory consumption went from 212.6 MB to 212.0 MB.
-Total: 4.969000 ms (FindLiveObjects: 0.564800 ms CreateObjectMapping: 0.461000 ms MarkObjects: 3.604900 ms  DeleteObjects: 0.335900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 702.727698 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Bag.png
+  artifactKey: Guid(21cc1b81d76504d088ae8268fe5286e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Bag.png using Guid(21cc1b81d76504d088ae8268fe5286e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469093218db332a9ca1e9fe5e07a62de') in 0.469252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Mail.png
+  artifactKey: Guid(9775498b546c94bf8b4146386f37533d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Mail.png using Guid(9775498b546c94bf8b4146386f37533d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fc255d7ebf0033930b177bf915660f') in 0.008914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Flippers.png
+  artifactKey: Guid(56167c848515f441694cb011478f4ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Flippers.png using Guid(56167c848515f441694cb011478f4ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93b99313e3a8f8cda4f73e712a6ce41') in 0.010290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem01_Green.png
+  artifactKey: Guid(0a79266e99a984cb5a3bbc997eaaac7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem01_Green.png using Guid(0a79266e99a984cb5a3bbc997eaaac7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad99358547ad4568f987a5d2acc5f15') in 0.009414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem04_Octagon_Yellow.png
+  artifactKey: Guid(aa6e4c002086e44dcaafd80972ff7556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem04_Octagon_Yellow.png using Guid(aa6e4c002086e44dcaafd80972ff7556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccb7697a6928105293659ce7494e3946') in 0.012894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003108 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gems.png
+  artifactKey: Guid(9a000a84493d74aa7a2940fe868eb4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gems.png using Guid(9a000a84493d74aa7a2940fe868eb4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd2bce4240dc462bf197091070396aa') in 0.013859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gold.png
+  artifactKey: Guid(a2d182d089d464f20a7d6bcb45c8c60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gold.png using Guid(a2d182d089d464f20a7d6bcb45c8c60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb159e5e14cf0dc79643a5c88bf741e') in 0.010038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Horsesheos.png
+  artifactKey: Guid(550b80d4ab6a04ef495e0f6b0938d447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Horsesheos.png using Guid(550b80d4ab6a04ef495e0f6b0938d447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9652c892a1523414ef8d72297ab4c7f') in 0.009432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Hammer.png
+  artifactKey: Guid(22f7e3cc2a7fa45dabc8d265a23f0426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Hammer.png using Guid(22f7e3cc2a7fa45dabc8d265a23f0426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89739108dbeae93f3fa905764608b89f') in 0.009793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Bomb_Dynamite.png
+  artifactKey: Guid(d60f24b57ce98450e8a7624f85975706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Bomb_Dynamite.png using Guid(d60f24b57ce98450e8a7624f85975706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad20ebb7f1e717f3ddbd0624ab1dc20') in 0.009885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gps.png
+  artifactKey: Guid(398c7b6d378f94e96a4e89b2a85adc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gps.png using Guid(398c7b6d378f94e96a4e89b2a85adc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f450d680ba473fac6ace6067eb9119e8') in 0.017098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem04_Octagon_Red.png
+  artifactKey: Guid(50b7f5588e7884ef39fe0c2692e32092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem04_Octagon_Red.png using Guid(50b7f5588e7884ef39fe0c2692e32092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e8a18c055e06a71fc139c985ffe232f') in 0.009846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Hourglass.png
+  artifactKey: Guid(634a47004c0e54c489a350f8cdd88dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Hourglass.png using Guid(634a47004c0e54c489a350f8cdd88dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0361a2eee9ed0830a7dfd5f60591e635') in 0.009354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Megaphone.png
+  artifactKey: Guid(3544b654262b54116a0e77b7c16f0d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Megaphone.png using Guid(3544b654262b54116a0e77b7c16f0d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c41bec34dc03e19ec1b61f7863f334') in 0.008957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem_Pearl.png
+  artifactKey: Guid(1339054bb13e74eb3ac0da4a738c13bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem_Pearl.png using Guid(1339054bb13e74eb3ac0da4a738c13bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e496b539cd9f5a3c5cf6efef76b4fb') in 0.008425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Food_Pizza.png
+  artifactKey: Guid(a8d869ed488b14d75abb8a0acba051ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Food_Pizza.png using Guid(a8d869ed488b14d75abb8a0acba051ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b50367fc37144a6545f98d1f8269380') in 0.009436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Bomb_Bomb.png
+  artifactKey: Guid(2e9c5b2e1bb824118b8deb06cc2f1780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Bomb_Bomb.png using Guid(2e9c5b2e1bb824118b8deb06cc2f1780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff5e7c350de6d4c83d39a049129b986') in 0.011655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Heart.png
+  artifactKey: Guid(21cb8c775421e4096915fe18192a6f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Heart.png using Guid(21cb8c775421e4096915fe18192a6f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3e5fb58be0610cedb62e4ccf4e75d0') in 0.008892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem02_Hexagon_Purple.png
+  artifactKey: Guid(5deeb243067ca48feb0ece0b05e49b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem02_Hexagon_Purple.png using Guid(5deeb243067ca48feb0ece0b05e49b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ec331d2173d274c2b20691cf5b1c44') in 0.008538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Laurel.png
+  artifactKey: Guid(08106b8429f964b9db369217a2ea8db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Laurel.png using Guid(08106b8429f964b9db369217a2ea8db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c122acf9e4d0bbc5a81adddc221661') in 0.009369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Lock.png
+  artifactKey: Guid(87ea36026183742639abb44ae6216cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Lock.png using Guid(87ea36026183742639abb44ae6216cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb301b1259ed0dcbce34a6fd10226b54') in 0.008957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Energy_Yellow.png
+  artifactKey: Guid(0a45b979ac5144eb4aba3aa461dff52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Energy_Yellow.png using Guid(0a45b979ac5144eb4aba3aa461dff52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0569e8159ee61d6abdfc36517a1063') in 0.009522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Golden_Pass.png
+  artifactKey: Guid(f211b824fcfc544a29d3b86ef3fd25f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Golden_Pass.png using Guid(f211b824fcfc544a29d3b86ef3fd25f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d508f72a5a1b5b2fff6f9536d6e5939') in 0.008967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Food_Shell.png
+  artifactKey: Guid(da4190fd959c24ed486c36e5eb321320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Food_Shell.png using Guid(da4190fd959c24ed486c36e5eb321320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ac49d17e9c9aaf85fb86f69042363e') in 0.008394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Book.png
+  artifactKey: Guid(aace0856003074fada4c38a8f3403d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Book.png using Guid(aace0856003074fada4c38a8f3403d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab40d450f42aa035692cdbf15ae7c9f') in 0.009742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Energy_Green.png
+  artifactKey: Guid(8ff133579bcb14533bcae0e2e37ce9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Energy_Green.png using Guid(8ff133579bcb14533bcae0e2e37ce9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69951f7ca5bef4c77042c9fc427499d') in 0.008636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Chest.png
+  artifactKey: Guid(f86792ca2052e44fb82023e8b8d3b4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Chest.png using Guid(f86792ca2052e44fb82023e8b8d3b4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b8f5e03179f5f169c36da6ed2762c61') in 0.009073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Clover.png
+  artifactKey: Guid(b42a6f8c260364826aabac44f61576b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Clover.png using Guid(b42a6f8c260364826aabac44f61576b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5033214adc52d8a33105973ec9910f') in 0.008552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Food_Can.png
+  artifactKey: Guid(21a1ae425f1b141c98749e851413e0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Food_Can.png using Guid(21a1ae425f1b141c98749e851413e0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2930f54b30bad1b8d4b23c41697826ff') in 0.009319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Compass.png
+  artifactKey: Guid(fb7c9a7098c084a96939f68bd662b7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Compass.png using Guid(fb7c9a7098c084a96939f68bd662b7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f4815b09eb7abfc5741691c03ea920') in 0.009174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem03_Diamond_Purple.png
+  artifactKey: Guid(5d28d1ed296ac46beb996d6634695306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Gem03_Diamond_Purple.png using Guid(5d28d1ed296ac46beb996d6634695306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba93c8e391a463b3656dfd15c82a0c77') in 0.009052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Bolt.png
+  artifactKey: Guid(ba59aa3994cff4b39b1fa4418cf194fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Bolt.png using Guid(ba59aa3994cff4b39b1fa4418cf194fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94582503a5a39de33b70704874d0dda6') in 0.008812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.943461 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Nut.png
+  artifactKey: Guid(b07423dbe4dad42b191d69e4adb2282a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Nut.png using Guid(b07423dbe4dad42b191d69e4adb2282a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ef50405626e59a41fdd2788182640b') in 0.009641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Potion02_Purple.png
+  artifactKey: Guid(71fcf2ecafa82467c9ac67ee5c710b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Potion02_Purple.png using Guid(71fcf2ecafa82467c9ac67ee5c710b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fffd605427fccaee69e978cc853d17c5') in 0.009022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Potion01_Red.png
+  artifactKey: Guid(8d42612723928446cb0f94f140e0f303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Potion01_Red.png using Guid(8d42612723928446cb0f94f140e0f303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d005b5923eb01d659094f10946dea9a') in 0.008485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Ranking.png
+  artifactKey: Guid(7b8594bda811f4207845f18a78428237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Ranking.png using Guid(7b8594bda811f4207845f18a78428237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fac3b911af4d5e58b9ee0b057e102d5') in 0.008626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Pumkin.png
+  artifactKey: Guid(c269f8d3688d646ce9487eafb7a3e5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Pumkin.png using Guid(c269f8d3688d646ce9487eafb7a3e5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edcec07e6daaf9a0737306ff9443938') in 0.008719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.577609 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Shovel.png
+  artifactKey: Guid(e702bd0a8f63749369ddc70e6ad44faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Shovel.png using Guid(e702bd0a8f63749369ddc70e6ad44faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3654392cd023eb503b5fcea1877259ce') in 0.010440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Trophy.png
+  artifactKey: Guid(9eda7fdd65e344e1e95eac4d16ccf7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Icon_ItemIcons(x2)/128/Icon_Trophy.png using Guid(9eda7fdd65e344e1e95eac4d16ccf7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c3a5d5268fa08be86d401e6f42f68b') in 0.008712 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
