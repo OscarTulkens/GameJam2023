@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IDraggerTarget
 {
-    public void DoOnDrop();
+    public void DoOnDrop(GameObject droppedobject);
 }

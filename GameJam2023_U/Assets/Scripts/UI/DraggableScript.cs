@@ -4,51 +4,66 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DraggableScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class DraggableScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public static DraggableScript _dragObject = null;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool _isDragging = false;
+    [SerializeField] private float _magicDragMultiplier = 9f;
 
     // Update is called once per frame
     void Update()
     {
         if (_dragObject != null)
         {
-            //probably wrong
-            _dragObject.transform.localPosition = Input.mousePosition;
+            Vector3 mouseworldpos = Input.mousePosition;
+            mouseworldpos.z = 10;
+
+            mouseworldpos = Camera.main.ScreenToWorldPoint(mouseworldpos);
+            Debug.Log(mouseworldpos);
+            //mouseworldpos.Scale(new Vector3(1, 1, 0));
+
+            //_dragObject.transform.position = mouseworldpos;
+            moveTowardsTarget(mouseworldpos);
         }
     }
 
-    public void OnDrag(PointerEventData eventData)
+    public void moveTowardsTarget(Vector3 target)
     {
-        //fun wiggle behaviour based on mouse movement.
+        Vector3 movementVector = (target - _dragObject.transform.position).normalized;
+        float distance = Vector3.Distance(target, _dragObject.transform.position);
+
+        Vector3 finalVector = movementVector * distance * _magicDragMultiplier;
+
+        _dragObject.transform.localPosition += finalVector * Time.deltaTime;
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         if (_dragObject == null)
         {
             _dragObject = this;
         }
-        //attachtomouse
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    public void OnPointerUp(PointerEventData eventData)
     {
-        
         if (_dragObject == this)
         {
+            //if overlap met target -> dotarget
             List<Collider2D> resultslist = new List<Collider2D>();
             ContactFilter2D contactfilter = new ContactFilter2D { layerMask = LayerMask.GetMask("DraggerTarget") };
 
-            //if (_dragObject.GetComponent<Collider2D>().OverlapCollider())
+            Physics2D.OverlapArea(GetComponent<BoxCollider2D>().bounds.min, GetComponent<BoxCollider2D>().bounds.max, contactfilter, resultslist);
+
+            if (resultslist.Count >= 1)
+            {
+                GameObject targetgameobject = resultslist[0].gameObject;
+                targetgameobject.GetComponent<IDraggerTarget>().DoOnDrop(gameObject);
+            }
+
+            //if niet -> val lmao
+
+            _dragObject = null;
         }
-        //checkif on target
-        //else go back
     }
 }
