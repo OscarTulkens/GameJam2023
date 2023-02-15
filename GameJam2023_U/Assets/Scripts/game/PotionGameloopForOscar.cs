@@ -111,11 +111,17 @@ public class PotionGameloopForOscar : MonoBehaviour
             DestroyPotionShelf();
             LeanTween.move(OurPotionView.gameObject, _winPos, 1f).setEaseInOutSine();
             LeanTween.scale(OurPotionView.gameObject, Vector3.one * 1.3f, 1f).setEaseInOutSine();
+            WinLoseScript.Instance.Win();
             //gameover
             //op dit moment is de potion al zwart geworden ( de laatste kleur in de potioncolour enum.
             //animation + potion breakage ig 
 
         }
+    }
+
+    private void Update()
+    {
+        
     }
 }
 
