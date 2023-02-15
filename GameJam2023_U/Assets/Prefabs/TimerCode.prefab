@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8876046384476050108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8876046384476050110}
+  - component: {fileID: 8876046384476050111}
+  m_Layer: 0
+  m_Name: TimerCode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8876046384476050110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876046384476050108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 406.50647, y: 295.43958, z: 68.80391}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8876046384476050111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876046384476050108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f25fc8d19c819246b56bc195b704d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimerCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.07677075
+      value: 10.08027
+      inSlope: -0.090716705
+      outSlope: -0.090716705
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.056176256
+    - serializedVersion: 3
+      time: 5.1126385
+      value: 9.4610615
+      inSlope: -0.32462063
+      outSlope: -0.32462063
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.22596498
+    - serializedVersion: 3
+      time: 12.09316
+      value: 5.652407
+      inSlope: -0.21705997
+      outSlope: -0.21705997
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.07634385
+    - serializedVersion: 3
+      time: 20
+      value: 2.5
+      inSlope: -1.442166
+      outSlope: -1.442166
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.045000356
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  PotionNumber: 0
+  TimerIntervals: []
