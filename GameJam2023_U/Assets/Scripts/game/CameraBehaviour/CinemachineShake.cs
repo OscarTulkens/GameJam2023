@@ -1,43 +1,53 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
+using Cinemachine;
 
 
 public class CinemachineShake : MonoBehaviour
-{
-    //public static CinemachineShake Instance { get; private set; }
+{   
 
-    //private CinemachineVirtualCamera cvc;
-    //private float shaketimer;
-    //private void Awake()
-    //{
-    //    Instance = this;
-    //    cvc = GetComponent<CinemachineVirtualCamera>();
-    //}
+    private CinemachineVirtualCamera cvc;
+    private float shaketimer;
+    private float Shakeintensity;
 
-    //public void shakeCamera(float intensity, float time)
-    //{
-    //    CinemachineBasicMultiChannelPerlin cmp = cvc.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-    //    cmp.m_AmplitudeGain = intensity;
+    float intensitymultiplyer = 0f;
 
-    //    shaketimer = time;
-    //}
+    CinemachineBasicMultiChannelPerlin cmp;
+    private void Awake()
+    {
+        
+        cvc = GetComponent<CinemachineVirtualCamera>();
+    }
 
-    //private void Update()
-    //{
-    //    if (shaketimer > 0)
-    //    {
-    //        shaketimer -= Time.deltaTime;
-    //        if (shaketimer <= 0f)
-    //        {
-    //            CinemachineBasicMultiChannelPerlin cmp = cvc.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+    public void shakeCamera(float intensity, float time, float frequency)
+    {
+        cmp = cvc.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
 
-    //            cmp.m_AmplitudeGain = 0f;
-    //        }
-    //    }
+        cmp.m_FrequencyGain = frequency;
 
-    //}
+        cmp.m_AmplitudeGain = intensity;
+        shaketimer = time;
+        Shakeintensity = intensity;
+
+        intensitymultiplyer = intensity / shaketimer;
+    }
+
+    private void Update()
+    {
+        if (shaketimer > 0)
+        {
+            shaketimer -= Time.deltaTime;
+            Shakeintensity -= Time.deltaTime * intensitymultiplyer;
+
+            cmp.m_AmplitudeGain = Shakeintensity;
+
+            if (shaketimer <= 0f)
+            {              
+
+                cmp.m_AmplitudeGain = 0f;
+            }
+        }
+
+    }
 }
