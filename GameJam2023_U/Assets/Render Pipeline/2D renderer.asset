@@ -1,5 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8782671722206262096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eced444a8188a4f94851928211fd41, type: 3}
+  m_Name: '[SCPE] SharpenRenderer'
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    injectionPoint: 550
+    alwaysEnable: 0
+    cameraTypes: 5
+--- !u!114 &-6867715883283127545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88484802267f2548ad84d0108298b39, type: 3}
+  m_Name: '[SCPE] KaleidoscopeRenderer'
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    injectionPoint: 550
+    alwaysEnable: 0
+    cameraTypes: 3
+--- !u!114 &-4103807796651156448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de805ffa8db69e8499306de22402dca3, type: 3}
+  m_Name: '[SCPE] AmbientOcclusion2DRenderer'
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    injectionPoint: 550
+    alwaysEnable: 0
+    cameraTypes: 5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,7 +65,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
-  m_RendererFeatures: []
+  m_RendererFeatures:
+  - {fileID: -8782671722206262096}
+  - {fileID: 7035987056521940395}
+  - {fileID: -4103807796651156448}
+  - {fileID: -6867715883283127545}
   m_RendererFeatureMap: 
   m_UseNativeRenderPass: 0
   m_TransparencySortMode: 0
@@ -58,3 +113,20 @@ MonoBehaviour:
   m_DefaultLitMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_DefaultUnlitMaterial: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_DefaultMaskMaterial: {fileID: 2100000, guid: 15d0c3709176029428a0da2f8cecf0b5, type: 2}
+--- !u!114 &7035987056521940395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da344ce563de5ee4a9266dc0a74eabd0, type: 3}
+  m_Name: '[SCPE] SketchRenderer'
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    injectionPoint: 550
+    alwaysEnable: 0
+    cameraTypes: 5
