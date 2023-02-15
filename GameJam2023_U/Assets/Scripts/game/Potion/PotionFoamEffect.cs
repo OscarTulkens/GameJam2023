@@ -4,7 +4,10 @@ using UnityEngine;
 
 public enum PotionFoamEffect
 {
-   foam1,
-   foam2
-
+   fire,
+   catpaws,
+   musicnotes,
+   fart,
+   butterflies,
+   leaves
 }

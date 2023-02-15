@@ -21,9 +21,9 @@ public class LevelUIController : MonoBehaviour
 
     int currentSceneIndex;
 
-    public void LoadNextScene()
+    public void LoadNextScene(int id)
     {
-        StartCoroutine(LoadSceneRoutine(currentSceneIndex + 1, FaderSpeed));
+        StartCoroutine(LoadSceneRoutine(id, FaderSpeed));
   
     }
 
@@ -34,9 +34,9 @@ public class LevelUIController : MonoBehaviour
      
     }
 
-    public void LoadGameScene()
+    public void LoadGameScene(int id)
     {
-        StartCoroutine(LoadSceneRoutine(1, FaderSpeed));
+        StartCoroutine(LoadSceneRoutine(id, FaderSpeed));
 
        
     }

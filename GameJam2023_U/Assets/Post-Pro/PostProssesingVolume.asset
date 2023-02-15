@@ -169,7 +169,7 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.138
+    m_Value: 0.206
   luminanceThreshold:
     m_OverrideState: 1
     m_Value: 0.702
@@ -236,7 +236,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.815
   response:
     m_OverrideState: 1
     m_Value: 0.72
@@ -263,17 +263,17 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   distanceFade:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   startFadeDistance:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   endFadeDistance:
-    m_OverrideState: 0
-    m_Value: 500
+    m_OverrideState: 1
+    m_Value: 0.33
   amount:
     m_OverrideState: 1
-    m_Value: 4.91
+    m_Value: 5
   iterations:
     m_OverrideState: 0
     m_Value: 6

@@ -15,7 +15,8 @@ namespace Assets.Scripts.game.Potion
         public SpriteRenderer PotioncolourImage;
         public SpriteRenderer FoamImage;
         public Transform EffectSpawnPoint;
-        public GameObject Effect;
+        public bool IsTargetPotion = false;
+        [HideInInspector] public GameObject Effect;
         public Potion mymodel;
 
         public void InitPotionview(Potion potionModel)
@@ -25,7 +26,8 @@ namespace Assets.Scripts.game.Potion
             //hier kan een tween tussen images gemaakt worden ofzo idk
             PotioncolourImage.color = PotionDatabase.GetPotionColourFromEnum(potionModel.Potioncolourenum);
             FoamImage.sprite = PotionDatabase.GetPotionFoam(potionModel.PotionFoam);
-            if (Effect !=null)
+            FoamImage.color = PotionDatabase.GetPotionColourFromEnum(potionModel.Potioncolourenum);
+            if (EffectSpawnPoint !=null && IsTargetPotion)
             {
                 Effect = Instantiate<GameObject>(PotionDatabase.GetPotionEffect(potionModel.PotionEffect),EffectSpawnPoint);
             }
@@ -35,12 +37,12 @@ namespace Assets.Scripts.game.Potion
         {
             PotioncolourImage.color = PotionDatabase.GetPotionColourFromEnum(potionModel.Potioncolourenum);
             FoamImage.sprite = PotionDatabase.GetPotionFoam(potionModel.PotionFoam);
-
+            FoamImage.color = PotionDatabase.GetPotionColourFromEnum(potionModel.Potioncolourenum);
             if (Effect!=null)
             {
                 Destroy(Effect);
-                Effect = Instantiate<GameObject>(PotionDatabase.GetPotionEffect(potionModel.PotionEffect), EffectSpawnPoint);
             }
+            Effect = Instantiate<GameObject>(PotionDatabase.GetPotionEffect(potionModel.PotionEffect), EffectSpawnPoint);
 
         }
 

@@ -10,9 +10,9 @@ namespace Assets.Scripts.game.Potion
 
         public static bool CheckCurrentPotionWithTargetPotion(Potion CurrentPotion, Potion targetPotion)
         {
-            if (CheckPotionColour(CurrentPotion, targetPotion) &&
+            if (CheckPotionColour(CurrentPotion, targetPotion) /*&&
                 CheckPotionEffect(CurrentPotion, targetPotion) &&
-                CheckPotionFoam(CurrentPotion, targetPotion))
+                CheckPotionFoam(CurrentPotion, targetPotion)*/)
             {
                 return true;
             }
@@ -69,7 +69,8 @@ namespace Assets.Scripts.game.Potion
                 }
             }
 
-            return PotionColour.black;       
+            return PotionColour.black;
+
         }
 
         public static PotionFoamEffect CombinePotionFoam(Potion NewDRaggedPotion)
