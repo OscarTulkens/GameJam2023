@@ -1,26 +1,46 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class TimerEventArgs : EventArgs
+{
+    public int CurrentTime { get; }
+
+    public int PotionAmount { get; }
+
+    public TimerEventArgs(int currentTime, int potionAmount)
+    {
+        CurrentTime = currentTime;
+        PotionAmount = potionAmount;
+    }
+}
 public class TimerCode : MonoBehaviour
 {
     public AnimationCurve TimerCurve;
 
-    public int PotionNumber = 0;
+    private int PotionNumber = 0;
 
-    public List<float> TimerIntervals = new List<float>();
+    public List<int> TimerIntervals = new List<int>();
+
+    private float CurrentTime = 0;
+    private int CurrentTimeIntervall;
+
+    int lastintcrossed = 0;
 
     private void Start()
     {
-        for (int i = 0; i < 21; i++)
+        for (int i = 0; i < 15; i++)
         {
-            TimerIntervals.Add(TimerCurve.Evaluate(i));
+            TimerIntervals.Add(Mathf.RoundToInt(TimerCurve.Evaluate(i)));
         }
+
+        CurrentTimeIntervall = GetNextTimeInterval();
     }
 
-    public float GetNextTimeInterval()
+    public int GetNextTimeInterval()
     {
-        float intervalToReturn = 10;
+        int intervalToReturn = 0;
 
         if (PotionNumber < TimerIntervals.Count)
         {
@@ -36,5 +56,42 @@ public class TimerCode : MonoBehaviour
         //Debug.Log($"{PotionNumber} + {intervalToReturn}");
 
         return intervalToReturn;
+    }
+    private void Update()
+    {
+        CurrentTime += Time.deltaTime;
+
+        if (CurrentTime > lastintcrossed && lastintcrossed < CurrentTimeIntervall)
+        {
+            lastintcrossed++;
+            
+            OnNormalTick(new TimerEventArgs(lastintcrossed, PotionNumber));
+           
+        }
+
+        if (CurrentTime >= CurrentTimeIntervall)
+        {
+            CurrentTimeIntervall = GetNextTimeInterval();
+
+            OnFinalTick(new TimerEventArgs(CurrentTimeIntervall, PotionNumber));
+           
+            lastintcrossed = 0;
+            CurrentTime = 0;
+        }
+    }
+
+    public event EventHandler<TimerEventArgs> NormalTick;
+    public event EventHandler<TimerEventArgs> FinalTick;
+
+    protected virtual void OnNormalTick(TimerEventArgs eventargs)
+    {
+        var handler = NormalTick;
+        handler?.Invoke(this, eventargs);
+    }
+
+    protected virtual void OnFinalTick(TimerEventArgs eventargs)
+    {
+        var handler = FinalTick;
+        handler?.Invoke(this, eventargs);
     }
 }
