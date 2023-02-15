@@ -36,6 +36,6 @@ namespace Assets.Scripts.game.Potion
     public class PotionEffectRelation
     {
         public PotionFoamEffect potionEffect;
-        public Sprite EffectImage;
+        public GameObject EffectImage;
     }
 }

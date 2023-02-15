@@ -11,7 +11,7 @@ namespace Assets.Scripts.game.Potion
     public static class PotionDatabase
     {
         public static Dictionary<PotionColour, Color> colours = new Dictionary<PotionColour, Color>();
-        public static Dictionary<PotionFoamEffect, Sprite> effects = new Dictionary<PotionFoamEffect, Sprite>();
+        public static Dictionary<PotionFoamEffect, GameObject> effects = new Dictionary<PotionFoamEffect, GameObject>();
         public static Dictionary<PotionFoamEffect, Sprite> foams = new Dictionary<PotionFoamEffect, Sprite>();
 
 
@@ -190,7 +190,7 @@ namespace Assets.Scripts.game.Potion
             }
         }
 
-        public static Sprite GetPotionEffect(PotionFoamEffect potionEffect)
+        public static GameObject GetPotionEffect(PotionFoamEffect potionEffect)
         {
             if (effects.TryGetValue(potionEffect, out var effect))
                 return effect;
