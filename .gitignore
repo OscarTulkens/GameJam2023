@@ -76,3 +76,5 @@ GameJam2023_U/UserSettings/EditorUserSettings.asset
 GameJam2023_U/UserSettings/
 *.log
 >>>>>>> Stashed changes
+*.cache
+*.meta
