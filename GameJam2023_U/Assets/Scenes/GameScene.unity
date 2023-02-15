@@ -4933,7 +4933,7 @@ PrefabInstance:
       objectReference: {fileID: 1529266964}
     - target: {fileID: 4296699051676367218, guid: 1c7f002c561a9437b8fdaf5466746b69, type: 3}
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
+      value: LoadGameScene
       objectReference: {fileID: 0}
     - target: {fileID: 4296699051676367218, guid: 1c7f002c561a9437b8fdaf5466746b69, type: 3}
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument

@@ -18,6 +18,10 @@ public class PotionGameloopForOscar : MonoBehaviour
     private List<GameObject> _shelfPotions = new List<GameObject>();
     public Potion TargetPotion;
 
+    private int _crackCounter = 0;
+    //haha
+    [SerializeField] private int _maxOverdoses = 3;
+
     [SerializeField] private Vector3 _winPos = Vector3.zero;
 
     public TimerCode Timercode;
@@ -103,8 +107,13 @@ public class PotionGameloopForOscar : MonoBehaviour
         // if we didnt win we generate 3 new potions on the shelve.
         if (!didWeWin)
         {
+            if (OurPotion.Potioncolourenum == PotionColour.black)
+            {
+                WinLoseScript.Instance.Lose();
+            }
             DestroyPotionShelf();
             SpawnPotionShelf();
+
         }
         else
         {
@@ -117,11 +126,6 @@ public class PotionGameloopForOscar : MonoBehaviour
             //animation + potion breakage ig 
 
         }
-    }
-
-    private void Update()
-    {
-        
     }
 }
 

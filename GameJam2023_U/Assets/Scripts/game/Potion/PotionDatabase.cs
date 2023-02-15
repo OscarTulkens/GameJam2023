@@ -54,6 +54,7 @@ namespace Assets.Scripts.game.Potion
 
             //CL3.Remove(combination2.resultcolor);
             //ColorCombination combination3 = new ColorCombination(combination2.resultcolor, CL3[0], CL3[1]);
+            ColourCombinationList.Clear();
 
             List<PotionColour> colourList = new List<PotionColour>();
             colourList.Add(PotionColour.Red);
@@ -66,7 +67,7 @@ namespace Assets.Scripts.game.Potion
 
             ColourCombinationList.Add(new ColorCombination(colourList[1], colourList[2], colourList[0]));
             ColourCombinationList.Add(new ColorCombination(colourList[0], colourList[1], colourList[4]));
-            ColourCombinationList.Add(new ColorCombination(colourList[2], colourList[4], colourList[2]));
+            ColourCombinationList.Add(new ColorCombination(colourList[3], colourList[4], colourList[2]));
             ColourCombinationList.Add(new ColorCombination(colourList[0], colourList[2], colourList[3]));
             ColourCombinationList.Add(new ColorCombination(colourList[3], colourList[2], colourList[1]));
 
@@ -161,6 +162,10 @@ namespace Assets.Scripts.game.Potion
 
         public static void InitializePotionDatabase(PotionDatabaseSO database)
         {
+            colours.Clear();
+            effects.Clear();
+            foams.Clear();
+
             foreach (var item in database.colourRelations)
             {
                 colours.Add(item.potioncolour, item.color);
