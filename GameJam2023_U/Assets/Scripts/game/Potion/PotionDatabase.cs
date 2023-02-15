@@ -67,8 +67,8 @@ namespace Assets.Scripts.game.Potion
             ColourCombinationList.Add(new ColorCombination(colourList[1], colourList[2], colourList[0]));
             ColourCombinationList.Add(new ColorCombination(colourList[0], colourList[1], colourList[4]));
             ColourCombinationList.Add(new ColorCombination(colourList[2], colourList[4], colourList[2]));
-            ColourCombinationList.Add(new ColorCombination(colourList[3], colourList[0], colourList[3]));
-            ColourCombinationList.Add(new ColorCombination(colourList[3], colourList[4], colourList[1]));
+            ColourCombinationList.Add(new ColorCombination(colourList[0], colourList[2], colourList[3]));
+            ColourCombinationList.Add(new ColorCombination(colourList[3], colourList[2], colourList[1]));
 
             ColourCombinationList.Shuffle();
         }
