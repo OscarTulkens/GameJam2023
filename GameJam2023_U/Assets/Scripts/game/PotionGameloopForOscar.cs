@@ -10,9 +10,12 @@ using UnityEngine;
 public class PotionGameloopForOscar : MonoBehaviour
 {
     public PotionDatabaseSO databaseSO;
-    public Potion Currentpotion;
-    public PotionView potionviewTemplate;
-    public Transform potviewparent;
+    public Potion OurPotion;
+    public GameObject PotionPrefab;
+    public PotionView OurPotionView;
+    public PotionView TargetPotionView;
+    public List<Transform> PotionStartPositions = new List<Transform>();
+    public Potion TargetPotion;
 
     private void Start()
     {
@@ -28,40 +31,52 @@ public class PotionGameloopForOscar : MonoBehaviour
         Debug.Log($"{PotionDatabase.GetPotionColourFromEnum(combinationlist[0].color1)} + {PotionDatabase.GetPotionColourFromEnum(combinationlist[0].color2)} = {PotionDatabase.GetPotionColourFromEnum(combinationlist[0].resultcolor)}");
 
         //genereren van de target en startingpotion
-        Potion startinPotion = PotionDatabase.generateTargetPotionModel();
-        Currentpotion = startinPotion;
-        Potion TargetPotion = PotionDatabase.generateStartingPotionModel(startinPotion);
+        OurPotion = PotionDatabase.generateTargetPotionModel();
+        TargetPotion = PotionDatabase.generateStartingPotionModel(OurPotion);
         //initialze de view (in deze code moeten de pots wel nog instanciated worden, up too you) 
-        PotionView potview = Instantiate<PotionView>(potionviewTemplate, potviewparent);
-        startinPotion.InitPotionview(potview);
-        PotionView potview2 = Instantiate<PotionView>(potionviewTemplate, potviewparent);
-        TargetPotion.InitPotionview(potview2);
+        OurPotion.InitPotionview(OurPotionView);
+        TargetPotion.InitPotionview(TargetPotionView);
+
+        SpawnPotionShelf();
 
         //------------------------------------------------------------------------------------------------------
 
         //templatecode voor spelen van een potion loop
 
         //potion die gedragt wordt, nu efkes een base one gemaakt.
-        new Potion(PotionColour.Red, PotionFoamEffect.foam1, PotionFoamEffect.foam1);
+        var fakepot = new Potion(PotionColour.Red, PotionFoamEffect.foam1, PotionFoamEffect.foam1);
 
         //combine dragged potion with current potion
         //dit past enkel de model aan, je moet de view nog opnieuwmakes/updaten
-        PottionCombiner.CombinePotions(Currentpotion, TargetPotion);
-        Currentpotion.updatePotionView();
+        
+
+
+    }
+
+    private void SpawnPotionShelf()
+    {
+        var generatenewPotionList = PotionDatabase.Generate3PotionPool(OurPotion);
+
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject potview3 = Instantiate<GameObject>(PotionPrefab, PotionStartPositions[i]);
+            generatenewPotionList[i].InitPotionview(potview3.GetComponentInChildren<PotionDragableScript>().potionview);
+        }
+    }
+
+
+    public void AddThisPotion(Potion draggedpotion)
+    {
+        PottionCombiner.CombinePotions(OurPotion, draggedpotion);
+        OurPotion.updatePotionView();
 
         //check victory condition
-        bool didWeWin = PottionCombiner.CheckCurrentPotionWithTargetPotion(Currentpotion, TargetPotion);
+        bool didWeWin = PottionCombiner.CheckCurrentPotionWithTargetPotion(OurPotion, TargetPotion);
 
         // if we didnt win we generate 3 new potions on the shelve.
         if (!didWeWin)
         {
-            var generatenewPotionList = PotionDatabase.Generate3PotionPool(Currentpotion);
-
-            foreach (var potion in generatenewPotionList)
-            {
-                PotionView potview3 = Instantiate<PotionView>(potionviewTemplate, potviewparent);
-                potion.InitPotionview(potview3);
-            }
+            //SpawnPotionShelf();
         }
         else
         {
@@ -70,9 +85,6 @@ public class PotionGameloopForOscar : MonoBehaviour
             //animation + potion breakage ig 
 
         }
-
-
     }
-
 }
 

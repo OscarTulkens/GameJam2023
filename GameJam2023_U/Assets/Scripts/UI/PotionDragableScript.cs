@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.game.Potion;
 
 public class PotionDragableScript : DragableScript
 {
@@ -8,6 +9,13 @@ public class PotionDragableScript : DragableScript
     [SerializeField] float _downwardsAccelerator = 0;
     private bool _isfalling = false;
     private Vector2 _movingVector = Vector2.zero;
+
+    public PotionView potionview = null;
+
+    private void Awake()
+    {
+        potionview = GetComponentInChildren<PotionView>();
+    }
 
     public override void DoOnLetGo()
     {
