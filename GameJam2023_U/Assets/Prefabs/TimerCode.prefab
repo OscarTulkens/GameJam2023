@@ -41,50 +41,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8876046384476050108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f25fc8d19c819246b56bc195b704d3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3816116469dbf46798cf642b1ffd7260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TimerCurve:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.07677075
-      value: 10.08027
-      inSlope: -0.090716705
-      outSlope: -0.090716705
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.056176256
-    - serializedVersion: 3
-      time: 5.1126385
-      value: 9.4610615
-      inSlope: -0.32462063
-      outSlope: -0.32462063
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.22596498
-    - serializedVersion: 3
-      time: 12.09316
-      value: 5.652407
-      inSlope: -0.21705997
-      outSlope: -0.21705997
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.07634385
-    - serializedVersion: 3
-      time: 20
-      value: 2.5
-      inSlope: -1.442166
-      outSlope: -1.442166
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.045000356
-      outWeight: 0
+    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  PotionNumber: 0
-  TimerIntervals: []
+  TimerIntervals: 

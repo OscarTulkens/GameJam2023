@@ -14,24 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colourRelations:
   - potioncolour: 0
-    color: {r: 0.8396226, g: 0.099012084, b: 0.099012084, a: 1}
+    color: {r: 0.8392157, g: 0.41165453, b: 0.09803921, a: 1}
   - potioncolour: 1
     color: {r: 0.12135102, g: 0.51362574, b: 0.9528302, a: 1}
   - potioncolour: 2
-    color: {r: 0.1888858, g: 0.990566, b: 0.107467085, a: 1}
+    color: {r: 0.05960925, g: 0.6415094, b: 0, a: 1}
   - potioncolour: 3
-    color: {r: 0.7264151, g: 0.14733891, b: 0.46310613, a: 1}
+    color: {r: 0.5371448, g: 0.12156862, b: 0.74509805, a: 1}
   - potioncolour: 4
     color: {r: 0.8584906, g: 0.8300058, b: 0.07694017, a: 1}
   - potioncolour: 5
     color: {r: 0, g: 0, b: 0, a: 1}
   foamrelation:
   - potionFoam: 0
-    FoamImage: {fileID: 21300000, guid: 23d2f9d15f15a43c5bf2c57de1a27879, type: 3}
+    FoamImage: {fileID: 21300000, guid: e88e028dd69d34e0b8c0a14c2964d05a, type: 3}
   - potionFoam: 1
-    FoamImage: {fileID: 21300000, guid: e0c60779c9ad14104a26ff569c139f15, type: 3}
+    FoamImage: {fileID: 21300000, guid: e88e028dd69d34e0b8c0a14c2964d05a, type: 3}
+  - potionFoam: 2
+    FoamImage: {fileID: 21300000, guid: e88e028dd69d34e0b8c0a14c2964d05a, type: 3}
+  - potionFoam: 3
+    FoamImage: {fileID: 21300000, guid: e88e028dd69d34e0b8c0a14c2964d05a, type: 3}
+  - potionFoam: 4
+    FoamImage: {fileID: 21300000, guid: e88e028dd69d34e0b8c0a14c2964d05a, type: 3}
+  - potionFoam: 5
+    FoamImage: {fileID: 21300000, guid: e88e028dd69d34e0b8c0a14c2964d05a, type: 3}
   Effectrelation:
   - potionEffect: 0
-    EffectImage: {fileID: 21300000, guid: bdd674017bb6b4807aa77daf5310b898, type: 3}
+    EffectImage: {fileID: 1857395120275655211, guid: 69e5a09847d344877a5cbe63f28e6ecf, type: 3}
   - potionEffect: 1
-    EffectImage: {fileID: 21300000, guid: a07f1de97da8b48b6bd4d976ad1b1fad, type: 3}
+    EffectImage: {fileID: 1857395120275655211, guid: 9d8a75dee9ec14e07b80f36a2fd3ceb4, type: 3}
+  - potionEffect: 2
+    EffectImage: {fileID: 1857395120275655211, guid: 9d575010b857a46bb94920468366b34a, type: 3}
+  - potionEffect: 3
+    EffectImage: {fileID: 1857395120275655211, guid: d097efec5b11d484d9dc79eb7d99d809, type: 3}
+  - potionEffect: 4
+    EffectImage: {fileID: 1857395120275655211, guid: 7f3dc0cce8cb64230963df3c05de55d5, type: 3}
+  - potionEffect: 5
+    EffectImage: {fileID: 1857395120275655211, guid: d07691320bafd419aa4ee22478ffb610, type: 3}

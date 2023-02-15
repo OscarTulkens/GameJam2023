@@ -13,10 +13,12 @@ public class CinemachineShake : MonoBehaviour
 
     float intensitymultiplyer = 0f;
 
+    public static CinemachineShake Instance = null;
+
     CinemachineBasicMultiChannelPerlin cmp;
     private void Awake()
     {
-        
+        Instance = this;
         cvc = GetComponent<CinemachineVirtualCamera>();
     }
 
@@ -49,5 +51,10 @@ public class CinemachineShake : MonoBehaviour
             }
         }
 
+    }
+
+    private void OnDestroy()
+    {
+        Instance = null;
     }
 }

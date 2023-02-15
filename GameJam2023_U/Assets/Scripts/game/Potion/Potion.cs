@@ -39,7 +39,7 @@ namespace Assets.Scripts.game.Potion
 
         public void updatePotionView()
         {
-            myPotionView.InitPotionview(this);
+            myPotionView.UpdatePotionview(this);
         }
 
 
