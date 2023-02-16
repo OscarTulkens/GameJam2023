@@ -59,22 +59,11 @@ sysinfo.txt
 crashlytics-build.properties
 /GameJam2023_U/[Ll]ibrary/
 \GameJam2023_U\Library\
-<<<<<<< Updated upstream
+
 GameJam2023_U/Temp/
 GameJam2023_U\Temp\
-=======
 GameJam2023_U/Logs/
-GameJam2023_U/Logs/shadercompiler-UnityShaderCompiler.exe0.log
-GameJam2023_U/Temp/__Backupscenes/0.backup
-GameJam2023_U/Temp/FSTimeGet-6e277f8744b37db48bd4bb14dd189437
-GameJam2023_U/Temp/FSTimeGet-84ec994d1e2be2246aad22384556f500
-GameJam2023_U/Temp/FSTimeGet-b8b735beded4c774b80b41e50cd60939
-GameJam2023_U/Temp/PropertyDatabase_1265138678
-GameJam2023_U/Temp/PropertyDatabase_2066312223
-GameJam2023_U/Temp/UnityLockfile
-GameJam2023_U/UserSettings/EditorUserSettings.asset
 GameJam2023_U/UserSettings/
+
 *.log
->>>>>>> Stashed changes
 *.cache
-*.meta

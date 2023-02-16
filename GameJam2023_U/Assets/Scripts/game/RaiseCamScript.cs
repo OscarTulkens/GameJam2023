@@ -5,6 +5,13 @@ using UnityEngine;
 public class RaiseCamScript : MonoBehaviour
 {
     [SerializeField] private GameObject _raisedCamPoint;
+    [SerializeField] private bool _
+
+    private void Start()
+    {
+        
+    }
+
     private void Update()
     {
          if (Input.GetMouseButtonDown(1))
