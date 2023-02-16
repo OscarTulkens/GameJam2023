@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Assets.Scripts.game.Potion;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class PotionGameloopForOscar : MonoBehaviour
@@ -27,6 +28,8 @@ public class PotionGameloopForOscar : MonoBehaviour
     public TimerCode Timercode;
 
     public PotionMap Potionmap;
+
+    public Image timervisual;
 
     private void Start()
     {
@@ -92,8 +95,15 @@ public class PotionGameloopForOscar : MonoBehaviour
         _shelfPotions.Clear();
     }
 
+    private void Update()
+    {
+        timervisual.fillAmount = Timercode.sliderDivision;
+    }
+
     public void AddThisPotion(GameObject draggedpotionobject)
     {
+        Timercode.ResetAndGetNextTimer();
+
         _shelfPotions.Remove(draggedpotionobject);
 
         Potion draggedpotionmodel = draggedpotionobject.GetComponentInChildren<PotionDragableScript>().potionview.mymodel;
