@@ -12,16 +12,22 @@ public class PotionGameloopForOscar : MonoBehaviour
 {
     public PotionDatabaseSO databaseSO;
     public Potion OurPotion;
-    public GameObject PotionPrefab;
+
+
+    //public GameObject PotionPrefab;
+
+    public List<GameObject> PotionPrefabList;
+
     public PotionView OurPotionView;
+    public OurPotionCracker TheCrackDealer;
+    public ShakeScript OurPotionShaker;
+
     public PotionView TargetPotionView;
     public List<Transform> PotionStartPositions = new List<Transform>();
     private List<GameObject> _shelfPotions = new List<GameObject>();
     public Potion TargetPotion;
 
-    private int _crackCounter = 0;
-    //haha
-    [SerializeField] private int _maxOverdoses = 3;
+   
 
     [SerializeField] private Vector3 _winPos = Vector3.zero;
 
@@ -38,10 +44,12 @@ public class PotionGameloopForOscar : MonoBehaviour
         //    Debug.Log($"NormalTick = CT:{e.CurrentTime} | PA:{e.PotionAmount}");
         //};
 
-        //Timercode.FinalTick += (s, e) =>
-        //{
-        //    Debug.Log($"FinalTick = CT:{e.CurrentTime} | PA:{e.PotionAmount}");
-        //};
+        Timercode.FinalTick += (s, e) =>
+        {
+            PotionCracker();
+            OurPotionShaker.StopShaking();
+            OurPotionShaker.Shake(e.CurrentTime);
+        };
 
         //uitlezen van de Shit uit het scriptablobject en opzetten dictionaries voor ease of use.
         PotionDatabase.InitializePotionDatabase(databaseSO);
@@ -65,9 +73,23 @@ public class PotionGameloopForOscar : MonoBehaviour
 
         SpawnPotionShelf();
 
+
+        OurPotionShaker.StopShaking();
+        OurPotionShaker.Shake(Timercode.TimerIntervals[0]);
+
         //------------------------------------------------------------------------------------------------------
 
 
+    }
+
+    public void PotionCracker()
+    {
+        bool isPotionCracked = TheCrackDealer.IsPotionBrokenAfterCrackDeal();
+
+        if (isPotionCracked)
+        {
+            WinLoseScript.Instance.Lose();
+        }
     }
 
     private void SpawnPotionShelf()
@@ -76,7 +98,10 @@ public class PotionGameloopForOscar : MonoBehaviour
 
         for (int i = 0; i < 3; i++)
         {
-            _shelfPotions.Add(Instantiate<GameObject>(PotionPrefab, PotionStartPositions[i]));
+            int PotionToSpawnint = UnityEngine.Random.Range(0, PotionPrefabList.Count);
+            GameObject potionToSpawn = PotionPrefabList[PotionToSpawnint];
+
+            _shelfPotions.Add(Instantiate<GameObject>(potionToSpawn, PotionStartPositions[i]));
             generatenewPotionList[i].InitPotionview(_shelfPotions[i].GetComponentInChildren<PotionDragableScript>().potionview);
         }
     }
@@ -89,7 +114,6 @@ public class PotionGameloopForOscar : MonoBehaviour
             {
                 potion.GetComponentInChildren<PotionDragableScript>().DoOnLetGo();
             }
-
         }
 
         _shelfPotions.Clear();

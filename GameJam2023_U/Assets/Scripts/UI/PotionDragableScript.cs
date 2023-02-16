@@ -25,6 +25,9 @@ public class PotionDragableScript : DragableScript
             {
                 Instantiate(_glassparticles, gameObject.transform.position, Quaternion.identity);
                 CinemachineShake.Instance.shakeCamera(2, 0.5f, 1);
+
+                FindObjectOfType<PotionGameloopForOscar>().PotionCracker();
+
                 Destroy(gameObject);
             });
 

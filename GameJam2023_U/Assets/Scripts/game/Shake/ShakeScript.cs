@@ -3,10 +3,11 @@ using System.Collections;
 
 public class ShakeScript : MonoBehaviour
 {
-    public float shakeStrength = .1f;
-    public float ShakeIncrease = 0.005f;
+    public float StartingShakeStrenght = 0.05f;
+    public float ShakeIncreaseStart = 0.05f;
+    
 
-    public float ShakeSpeed = 0.05f;
+    public float ShakeIntervall = 0.05f;
 
     float shake_intensity;
 
@@ -19,15 +20,7 @@ public class ShakeScript : MonoBehaviour
     //Temporary button for testing
     void OnGUI()
     {
-        if (GUI.Button(new Rect(20, 40, 80, 20), "Shake"))
-        {
-            Shake(10);
-        }
-
-        if (GUI.Button(new Rect(20, 60, 80, 20), "Stop"))
-        {
-            StopShaking();
-        }
+      
     }
 
     void OnEnable()
@@ -39,24 +32,22 @@ public class ShakeScript : MonoBehaviour
     {
         float shaketime = 0;
 
+        float ShakeIncrease = ShakeIncreaseStart / maxShakeTime;
+
         while (shaketime < maxShakeTime)
         {
             _transform.localPosition = new Vector3(originPosition.x + Random.Range(-shake_intensity, shake_intensity) * .2f,
                 originPosition.y + Random.Range(-shake_intensity, shake_intensity) * .2f, originPosition.z);
-
-            //originPosition + Random.insideUnitSphere * shake_intensity;
+                       
 
             _transform.localEulerAngles = new Vector3(0,
                 0, _transform.localEulerAngles.z + Random.Range(-shake_intensity, shake_intensity) * 2f);
 
-            //_transform.localRotation = new Quaternion(
-            //    originRotation.x + Random.Range(-shake_intensity, shake_intensity) * .2f,
-            //    originRotation.y + Random.Range(-shake_intensity, shake_intensity) * .2f,
-            //    originRotation.z + Random.Range(-shake_intensity, shake_intensity) * .2f,
-            //    originRotation.w + Random.Range(-shake_intensity, shake_intensity) * .2f);
             shake_intensity += ShakeIncrease;
-            shaketime += ShakeSpeed;
-            yield return new WaitForSeconds(ShakeSpeed);
+
+
+            shaketime += ShakeIntervall;
+            yield return new WaitForSeconds(ShakeIntervall);
         }
 
         ShakingStopped();
@@ -83,7 +74,7 @@ public class ShakeScript : MonoBehaviour
         originPosition = _transform.localPosition;
         originRotation = _transform.localRotation;
 
-        shake_intensity = shakeStrength;
+        shake_intensity = StartingShakeStrenght;
         ShakingCR = StartCoroutine(ShakeIt(maxShakeTime));
     }
 }

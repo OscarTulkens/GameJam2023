@@ -30,7 +30,7 @@ public class TimerCode : MonoBehaviour
 
     int lastintcrossed = 0;
 
-    private void Start()
+    private void Awake()
     {
         for (int i = 0; i < 15; i++)
         {
