@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.game.Potion;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PotionDragableScript : DragableScript
 {
+    public EventReference Clank;
+    public EventReference Break;
     [SerializeField] private GameObject _glassparticles = null;
 
     [HideInInspector] public PotionView potionview = null;
@@ -26,7 +30,12 @@ public class PotionDragableScript : DragableScript
                 Instantiate(_glassparticles, gameObject.transform.position, Quaternion.identity);
                 CinemachineShake.Instance.shakeCamera(2, 0.5f, 1);
 
-                FindObjectOfType<PotionGameloopForOscar>().PotionCracker();
+                PlaySound(Break, 0.5f, 1);
+                if (potionview.IsOnShelf == true)
+                {
+                    FindObjectOfType<PotionGameloopForOscar>().PotionCracker();
+                }
+
 
                 Destroy(gameObject);
             });
@@ -36,8 +45,20 @@ public class PotionDragableScript : DragableScript
 
     public override void DoOnGrab()
     {
+        PlaySound(Clank, 0.5f, 1);
+        potionview.IsOnShelf = true;
         LeanTween.moveLocalZ(potionview.gameObject, -0.2f, 0.1f).setEaseOutSine();
         LeanTween.cancel(gameObject);
         LeanTween.scale(gameObject, Vector3.one * 1.3f, 0.5f).setEasePunch();
+    }
+
+    public void PlaySound(EventReference eventotplay, float volume, float pitch)
+    {
+        var instance = RuntimeManager.CreateInstance(eventotplay);
+        instance.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
+        instance.setVolume(volume);
+        instance.setPitch(pitch);
+        instance.start();
+        instance.release();
     }
 }

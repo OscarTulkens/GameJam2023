@@ -18,6 +18,7 @@ namespace Assets.Scripts.game.Potion
         public bool IsTargetPotion = false;
         [HideInInspector] public GameObject Effect;
         public Potion mymodel;
+        public bool IsOnShelf = false;
 
         public void InitPotionview(Potion potionModel)
         {

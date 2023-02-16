@@ -2251,7 +2251,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 190729528}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &585961103
 MonoBehaviour:
@@ -4266,6 +4266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gameloop: {fileID: 0}
+  BoopObject: {fileID: 0}
 --- !u!50 &1343253087
 Rigidbody2D:
   serializedVersion: 4
@@ -5960,6 +5961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _raisedCamPoint: {fileID: 601423600}
+  _hasStarted: 0
 --- !u!114 &1724367615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7563,6 +7565,10 @@ PrefabInstance:
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 733605222}
+    - target: {fileID: 4296699051676367218, guid: 1c7f002c561a9437b8fdaf5466746b69, type: 3}
+      propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4296699051676367220, guid: 1c7f002c561a9437b8fdaf5466746b69, type: 3}
       propertyPath: m_Name
       value: StartGameBUTTON

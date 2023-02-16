@@ -27,6 +27,7 @@ public class PotionGameloopForOscar : MonoBehaviour
     private List<GameObject> _shelfPotions = new List<GameObject>();
     public Potion TargetPotion;
 
+    public GameObject TimerArrow = null;
    
 
     [SerializeField] private Vector3 _winPos = Vector3.zero;
@@ -36,6 +37,8 @@ public class PotionGameloopForOscar : MonoBehaviour
     public PotionMap Potionmap;
 
     public Image timervisual;
+
+    private bool _gameOver = false;
 
     private void Start()
     {
@@ -48,7 +51,11 @@ public class PotionGameloopForOscar : MonoBehaviour
         {
             PotionCracker();
             OurPotionShaker.StopShaking();
-            OurPotionShaker.Shake(e.CurrentTime);
+            if (_gameOver ==false)
+            {
+                OurPotionShaker.Shake(e.CurrentTime);
+            }
+
         };
 
         //uitlezen van de Shit uit het scriptablobject en opzetten dictionaries voor ease of use.
@@ -74,7 +81,7 @@ public class PotionGameloopForOscar : MonoBehaviour
         SpawnPotionShelf();
 
 
-        OurPotionShaker.StopShaking();
+        //OurPotionShaker.StopShaking();
         OurPotionShaker.Shake(Timercode.TimerIntervals[0]);
 
         //------------------------------------------------------------------------------------------------------
@@ -88,6 +95,7 @@ public class PotionGameloopForOscar : MonoBehaviour
 
         if (isPotionCracked)
         {
+            _gameOver = true;
             WinLoseScript.Instance.Lose();
         }
     }
@@ -121,7 +129,31 @@ public class PotionGameloopForOscar : MonoBehaviour
 
     private void Update()
     {
-        timervisual.fillAmount = Timercode.sliderDivision;
+        if (_gameOver == false)
+        {
+            timervisual.fillAmount = Timercode.sliderDivision;
+            TimerArrow.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Timercode.arrowrotation));
+        }
+
+        bool isempty = true;
+        for (int i = 0; i < _shelfPotions.Count; i++)
+        {
+            if (_shelfPotions[i]==null)
+            {
+                
+            }
+            else
+            {
+                isempty = false;
+            }
+        }
+
+        if (isempty)
+        {
+            _shelfPotions.Clear();
+            SpawnPotionShelf();
+        }
+
     }
 
     public void AddThisPotion(GameObject draggedpotionobject)
@@ -144,16 +176,18 @@ public class PotionGameloopForOscar : MonoBehaviour
             if (OurPotion.Potioncolourenum == PotionColour.black)
             {
                 WinLoseScript.Instance.Lose();
+                _gameOver = true;
             }
             DestroyPotionShelf();
             SpawnPotionShelf();
-
         }
         else
         {
             Timercode.StopTimer();
+
             DestroyPotionShelf();
             WinLoseScript.Instance.Win();
+            _gameOver = true;
             //gameover
             //op dit moment is de potion al zwart geworden ( de laatste kleur in de potioncolour enum.
             //animation + potion breakage ig 

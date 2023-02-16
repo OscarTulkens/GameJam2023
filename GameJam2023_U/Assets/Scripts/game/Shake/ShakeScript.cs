@@ -1,8 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 
 public class ShakeScript : MonoBehaviour
 {
+    public EventReference clanknoise;
+
     public float StartingShakeStrenght = 0.05f;
     public float ShakeIncreaseStart = 0.05f;
     
@@ -67,6 +71,7 @@ public class ShakeScript : MonoBehaviour
         StopCoroutine(ShakingCR);
         _transform.localPosition = originPosition;
         _transform.localRotation = originRotation;
+        LeanTween.scale(gameObject, transform.localScale * 1.2f, 0.4f).setEasePunch();
     }
 
     public void Shake(float maxShakeTime)

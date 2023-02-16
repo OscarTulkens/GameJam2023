@@ -255,6 +255,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _magicDragMultiplier: 15
+  Clank:
+    Guid:
+      Data1: 208463685
+      Data2: 1074053237
+      Data3: -1470848361
+      Data4: -36873813
+    Path: event:/SFX/KLINKS
+  Break:
+    Guid:
+      Data1: -212303546
+      Data2: 1116755059
+      Data3: 481206696
+      Data4: -1582634645
+    Path: event:/SFX/BREAKS
   _glassparticles: {fileID: 1857395120275655211, guid: 376c1861177e4422285c187b490a0d70, type: 3}
   potionview: {fileID: 0}
 --- !u!1 &2883155401036305901

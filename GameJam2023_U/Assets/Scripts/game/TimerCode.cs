@@ -28,6 +28,8 @@ public class TimerCode : MonoBehaviour
 
     public float sliderDivision { get => CurrentTime / CurrentTimeIntervall; }
 
+    public float arrowrotation { get => sliderDivision * 360; }
+
     int lastintcrossed = 0;
 
     private void Awake()
@@ -42,8 +44,8 @@ public class TimerCode : MonoBehaviour
 
     public void StopTimer()
     {
-        LeanTween.scale(gameObject, Vector3.zero, 0.5f).setEaseOutBack();
-        gameObject.SetActive(false);
+        //LeanTween.scale(gameObject, Vector3.zero, 0.5f).setEaseOutBack();
+        //gameObject.SetActive(false);
     }
 
     public int GetNextTimeInterval()

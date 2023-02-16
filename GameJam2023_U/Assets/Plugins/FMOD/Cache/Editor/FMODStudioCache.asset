@@ -1,5 +1,400 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8283210769747045006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ButterFly_Potion_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ButterFly_Potion_SFX
+  Guid:
+    Data1: -1104558160
+    Data2: 1307486722
+    Data3: 2003534512
+    Data4: -916303799
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1480
+--- !u!114 &-7272624158086089369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Fmod Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638121439160000000
+  FileSizes:
+  - Name: 
+    Value: 1984
+  Exists: 1
+--- !u!114 &-7209969940122459830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/WhooshES
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/WhooshES
+  Guid:
+    Data1: 1393008981
+    Data2: 1133336445
+    Data3: 1114670772
+    Data4: 674651929
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-7050790448500567301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_Break_SFX 3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_Break_SFX 3
+  Guid:
+    Data1: 1350492130
+    Data2: 1285108608
+    Data3: -456907897
+    Data4: 444980061
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-6565533971591992349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_Brubble_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_Brubble_SFX
+  Guid:
+    Data1: -2005546637
+    Data2: 1105220212
+    Data3: 1490172827
+    Data4: -1505827899
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1100
+--- !u!114 &-6228585128801997123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_klink_SFX 3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_klink_SFX 3
+  Guid:
+    Data1: -146571134
+    Data2: 1199632550
+    Data3: -1913734774
+    Data4: -1502404847
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &-5738561261842984460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_Break_SFX 4
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_Break_SFX 4
+  Guid:
+    Data1: -2000752097
+    Data2: 1272995616
+    Data3: -630682714
+    Data4: -1369824822
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1600
+--- !u!114 &-5633676649531282252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Whoosh_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Whoosh_SFX
+  Guid:
+    Data1: 901580553
+    Data2: 1153157705
+    Data3: 389938049
+    Data4: 210077475
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200
+--- !u!114 &-4815175055617879854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Fart_Potion_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Fart_Potion_SFX
+  Guid:
+    Data1: -774828750
+    Data2: 1334866639
+    Data3: -270441041
+    Data4: -1756861539
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 720
+--- !u!114 &-4414730809750388303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_klink_SFX 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_klink_SFX 2
+  Guid:
+    Data1: -1572581397
+    Data2: 1199444136
+    Data3: -60460625
+    Data4: 1626933699
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 365
+--- !u!114 &-3891693578208063747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_Crack2_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_Crack2_SFX
+  Guid:
+    Data1: -1451471526
+    Data2: 1100250747
+    Data3: 975959446
+    Data4: -733973213
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 486
+--- !u!114 &-2331172571734865008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Purring_Potion_SFX_Loop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Purring_Potion_SFX_Loop
+  Guid:
+    Data1: 290129540
+    Data2: 1176434504
+    Data3: -2115288176
+    Data4: -24875556
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11000
+--- !u!114 &-2171983215489001671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Whoosh_SFX 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Whoosh_SFX 2
+  Guid:
+    Data1: 1562157486
+    Data2: 1284699721
+    Data3: -622327109
+    Data4: -1400251270
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
+--- !u!114 &-1643742247440702473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/BREAKS
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/BREAKS
+  Guid:
+    Data1: -212303546
+    Data2: 1116755059
+    Data3: 481206696
+    Data4: -1582634645
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-1496695540384114284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/soundtrack_Complete/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1321808037
+    data2: 963826366
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +407,435 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  EditorBanks:
+  - {fileID: -7272624158086089369}
+  - {fileID: 2941710389104644956}
+  EditorEvents:
+  - {fileID: -5633676649531282252}
+  - {fileID: -5738561261842984460}
+  - {fileID: -4815175055617879854}
+  - {fileID: 7558834715196743283}
+  - {fileID: -3891693578208063747}
+  - {fileID: 6000945269316847758}
+  - {fileID: 1194605331425253349}
+  - {fileID: 2129977722933947649}
+  - {fileID: -6565533971591992349}
+  - {fileID: 545357436997640381}
+  - {fileID: -6228585128801997123}
+  - {fileID: -2331172571734865008}
+  - {fileID: 5155119613317888669}
+  - {fileID: -2171983215489001671}
+  - {fileID: -8283210769747045006}
+  - {fileID: 4708911519490504780}
+  - {fileID: 4844902225980677587}
+  - {fileID: 4708802604865541530}
+  - {fileID: -7050790448500567301}
+  - {fileID: 422994542861579347}
+  - {fileID: 9090200647898567504}
+  - {fileID: -4414730809750388303}
+  - {fileID: 2558518867201147712}
+  - {fileID: 1784061279907824633}
+  - {fileID: -1643742247440702473}
+  - {fileID: -7209969940122459830}
+  EditorParameters:
+  - {fileID: 7920607615916532551}
+  MasterBanks:
+  - {fileID: 2941710389104644956}
+  StringsBanks:
+  - {fileID: -7272624158086089369}
+  cacheTime: 638121439160000000
   cacheVersion: 131601
+--- !u!114 &422994542861579347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_klink_SFX 5
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_klink_SFX 5
+  Guid:
+    Data1: -452286235
+    Data2: 1118886089
+    Data3: 1007671706
+    Data4: -1642485695
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 560
+--- !u!114 &545357436997640381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Fire_Potion_SFX_Loop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Fire_Potion_SFX_Loop
+  Guid:
+    Data1: 115881333
+    Data2: 1178798885
+    Data3: 1979054499
+    Data4: -1721101218
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &1194605331425253349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_Crack_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_Crack_SFX
+  Guid:
+    Data1: 1521817961
+    Data2: 1132409510
+    Data3: -1116758139
+    Data4: 1546346049
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 486
+--- !u!114 &1784061279907824633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/KLINKS
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/KLINKS
+  Guid:
+    Data1: 208463685
+    Data2: 1074053237
+    Data3: -1470848361
+    Data4: -36873813
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &2129977722933947649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/soundtrack_Complete
+  m_EditorClassIdentifier: 
+  Path: event:/Music/soundtrack_Complete
+  Guid:
+    Data1: 245569644
+    Data2: 1254752409
+    Data3: -272579435
+    Data4: -865205856
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1496695540384114284}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 58000
+--- !u!114 &2558518867201147712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/CRACKS
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/CRACKS
+  Guid:
+    Data1: -557259005
+    Data2: 1193981981
+    Data3: -378838361
+    Data4: -2063291479
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &2941710389104644956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Fmod Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638121439160000000
+  FileSizes: []
+  Exists: 1
+--- !u!114 &4708802604865541530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ButterFly_Potion_SFX_Loop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ButterFly_Potion_SFX_Loop
+  Guid:
+    Data1: -855824689
+    Data2: 1220933887
+    Data3: -704884582
+    Data4: 283609447
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12500
+--- !u!114 &4708911519490504780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Whoosh_SFX 3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Whoosh_SFX 3
+  Guid:
+    Data1: 1423673027
+    Data2: 1179706637
+    Data3: -693449843
+    Data4: -1572060056
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
+--- !u!114 &4844902225980677587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_klink_SFX 4
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_klink_SFX 4
+  Guid:
+    Data1: -863486004
+    Data2: 1195243489
+    Data3: -1158720592
+    Data4: -1449605178
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &5155119613317888669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/CAt_Potion_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/CAt_Potion_SFX
+  Guid:
+    Data1: -463738226
+    Data2: 1138780819
+    Data3: 1415593879
+    Data4: -1028298593
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &6000945269316847758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_Break_SFX 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_Break_SFX 2
+  Guid:
+    Data1: 877259880
+    Data2: 1333387860
+    Data3: 54660753
+    Data4: 379180192
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 650
+--- !u!114 &7558834715196743283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_Break_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_Break_SFX
+  Guid:
+    Data1: 140242511
+    Data2: 1321461700
+    Data3: 2132009647
+    Data4: 1158786002
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 821
+--- !u!114 &7920607615916532551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  StudioPath: parameter:/Speed
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1321808037
+    data2: 963826366
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &9090200647898567504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Potion_klink_SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Potion_klink_SFX
+  Guid:
+    Data1: 2059962600
+    Data2: 1263021365
+    Data3: -1608682864
+    Data4: -365820327
+  Banks:
+  - {fileID: 2941710389104644956}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 340
