@@ -5,8 +5,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using System;
 using UnityEngine.UI;
-using FMOD.Studio;
-using FMODUnity;
+//using FMOD.Studio;
+//using FMODUnity;
 
 public class ButtonScript : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
@@ -22,8 +22,8 @@ public class ButtonScript : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
 
     [SerializeField] private bool _isButton = true;
 
-    [SerializeField] private EventReference _clickEvent = new EventReference();
-    [SerializeField] private EventReference _hoverEvent = new EventReference();
+    //[SerializeField] private EventReference _clickEvent = new EventReference();
+    //[SerializeField] private EventReference _hoverEvent = new EventReference();
 
     [Space]
     [Header("Background Image")]
@@ -58,7 +58,7 @@ public class ButtonScript : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
         {
             if (_isClickable == true && _isButton && _isUnavailable == false)
             {
-                RuntimeManager.PlayOneShot(_clickEvent);
+                //RuntimeManager.PlayOneShot(_clickEvent);
                 LeanTween.cancel(gameObject);
                 LeanTween.scale(gameObject, _startScale * _tweenScale, _tweenTime).setEasePunch();
                 LeanTween.delayedCall(_tweenTime / 3, () => { buttonEvent?.Invoke(); });
@@ -95,7 +95,7 @@ public class ButtonScript : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
         {
             if (_isClickable == true && _isButton && _isUnavailable == false)
             {
-                RuntimeManager.PlayOneShot(_hoverEvent);
+                //RuntimeManager.PlayOneShot(_hoverEvent);
                 LeanTween.cancel(gameObject);
                 LeanTween.scale(gameObject, _startScale * _scaleFactor, _tweenTime).setEaseOutBack();
                 if (_BackgroundImage != null) _BackgroundImage.color = Color.white;

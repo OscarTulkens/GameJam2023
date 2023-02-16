@@ -23,8 +23,10 @@ public class TimerCode : MonoBehaviour
 
     public List<int> TimerIntervals = new List<int>();
 
-    private float CurrentTime = 0;
+    float CurrentTime = 0;
     private int CurrentTimeIntervall;
+
+    public float sliderDivision { get => CurrentTime / CurrentTimeIntervall; }
 
     int lastintcrossed = 0;
 
@@ -57,6 +59,7 @@ public class TimerCode : MonoBehaviour
 
         return intervalToReturn;
     }
+
     private void Update()
     {
         CurrentTime += Time.deltaTime;
@@ -78,6 +81,16 @@ public class TimerCode : MonoBehaviour
             lastintcrossed = 0;
             CurrentTime = 0;
         }
+    }
+
+    public void ResetAndGetNextTimer()
+    {
+        CurrentTimeIntervall = GetNextTimeInterval();
+
+        //OnFinalTick(new TimerEventArgs(CurrentTimeIntervall, PotionNumber));
+
+        lastintcrossed = 0;
+        CurrentTime = 0;
     }
 
     public event EventHandler<TimerEventArgs> NormalTick;
