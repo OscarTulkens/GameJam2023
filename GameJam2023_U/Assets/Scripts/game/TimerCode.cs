@@ -40,6 +40,12 @@ public class TimerCode : MonoBehaviour
         CurrentTimeIntervall = GetNextTimeInterval();
     }
 
+    public void StopTimer()
+    {
+        LeanTween.scale(gameObject, Vector3.zero, 0.5f).setEaseOutBack();
+        gameObject.SetActive(false);
+    }
+
     public int GetNextTimeInterval()
     {
         int intervalToReturn = 0;
